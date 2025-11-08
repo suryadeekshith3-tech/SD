@@ -1,0 +1,135 @@
+/* General Styles */ 
+body { 
+    background-color: whitesmoke; 
+    font-family: Arial, sans-serif; 
+    font-size: medium;
+} 
+ 
+/* Form Container */ 
+#resu-form { 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+} 
+ 
+#resu-form h1 { 
+    color: #35251d; 
+    margin-bottom: 20px; 
+    text-align: center;
+} 
+ 
+#resu-form h3 { 
+    color: #35251d; 
+    margin-bottom: 15px; 
+} 
+ 
+.form-group { 
+    margin-bottom: 15px; 
+    padding: 20px;
+} 
+ 
+.form-group label { 
+    font-weight: bold; 
+    color: #35251d; 
+} 
+ 
+.form-control { 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+} 
+ 
+.form-control:focus { 
+    border-color: #35251d; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.textarea-secondary { 
+    font-size: 14px; 
+    color: #666; 
+    font-weight: bold;
+} 
+ 
+/* Buttons */ 
+.btn { 
+    background-color: #1282c4; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+} 
+ 
+.btn:hover { 
+    background-color: #17c2b9; 
+} 
+ 
+.button { 
+    position: relative; 
+    width: 200px; 
+    height: 60px; 
+    margin: 0 auto; 
+    perspective: 1000px; 
+} 
+ 
+.button-top { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #29d31a; 
+    color: white; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bold; 
+    transform-style: preserve-3d; 
+    transition: transform 0.3s; 
+} 
+ 
+.button:hover .button-top { 
+    transform: rotateX(-10deg); 
+} 
+ 
+.button-bottom { 
+    position: absolute; 
+    top: 5px; 
+    left: 5px; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #189218; 
+    border-radius: 5px; 
+    z-index: -1; 
+} 
+ 
+.button-base { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #085823; 
+    border-radius: 5px; 
+    z-index: -2; 
+} 
+ 
+/* Responsive Design */ 
+@media (max-width: 768px) { 
+    .row { 
+        flex-direction: column; 
+    } 
+     
+    .col-md-6 { 
+        width: 100%; 
+    } 
+     
+    .button { 
+        width: 100%; 
+        max-width: 200px; 
+    } 
+} 
+ 
